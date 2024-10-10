@@ -1,0 +1,21 @@
+# Practicing logical operators
+
+# Logical operators combine two relational expressions and return a boolean result (True, False).
+# and: "and", returns True only if both conditions are True.
+# or: "or", returns True if at least one condition is True.
+# not: "not", inverts the result; returns False if True, and True if False.
+
+# Example of using logical operators
+print(10 > 100 and 10 < 100)  # Both conditions need to be True, result is False
+print(10 > 100 or 10 < 100)   # At least one condition needs to be True, result is True
+print(not(10 > 1000))         # Inverts the result, 10 > 1000 is False, so the result is True
+
+# Given the following conditions, how to make the expression evaluate to True
+a = 1
+b = 2
+print(a == b or a < b)        # a < b is True, so the result is True
+print(not(a == b))            # a == b is False, so the result is True after applying not
+
+# Note:
+# Examples like the above, using relational and logical operators, are typically not used in this form in real programming.
+# These are for conceptual understanding and are applied in various ways in real programming scenarios.
