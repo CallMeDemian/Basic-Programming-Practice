@@ -1,0 +1,94 @@
+# Algorithm - A series of steps organized to process a task
+
+# Algorithm representation methods:
+# 1. Natural language
+# 2. Flowchart
+# 3. Pseudo code
+# 4. Programming language
+
+# Algorithms consist of sequential structure, selection structure, and loop structure.
+
+# Basic design for implementing a dice game
+
+# Basic logic design:
+# Two people, A and B, roll dice, and the person with the higher number wins.
+
+# Possible scenarios:
+# 1. A wins
+# 2. B wins
+# 3. It's a tie
+
+# Things to consider:
+# 1) When rolling a die, a random number between 1 and 6 occurs.
+# 2) How can we generate such random numbers in Python?
+
+# There is a concept of external modules.
+# Using an external module to generate random numbers makes the implementation easier.
+# Just like in most programming languages, Python has an external module for generating random numbers.
+# While this is an external module, Python often includes it by default.
+# If not provided by default, you can install it using the command "pip install module_name".
+
+# How to use external modules in Python:
+# Since it's not a built-in feature, you need to explicitly declare that you're using it.
+# Method 1: import module_name
+# Method 2: import module_name as alias
+# Method 3: from module_name import function_name (method_name)
+
+# What are modules, libraries, and packages?
+
+# 1. A module is a reusable collection of code that performs specific functions.
+# 2. A package is a collection of modules grouped by a common theme.
+# 3. A library is a collection of related packages.
+
+# In practice, the terms module, library, and package are often used interchangeably without strict distinction.
+
+# What are functions and methods?
+
+# 1. A function is a pre-written block of code that performs a specific action.
+#    You can call a function by using function_name(arguments).
+
+# 2. A method is similar to a function but is specifically part of an external module (or class).
+#    Methods are usually referred to as methods when they belong to a class or module.
+
+# In practice, the terms function and method are often used interchangeably.
+
+# Basic format for importing external modules and using their functions (methods):
+
+# Method 1 - module_name.function
+# Dice rolling can be implemented with the following code:
+# import random
+# rand_num = random.randrange(1, 7) # Possible outputs: 1, 2, 3, 4, 5, 6 
+# print(rand_num)
+
+
+# GenAI - Learn how to use and apply the randrange method from Python's random module.
+# Please provide the usage and example code for the randrange method from the random module in Python.
+
+# import random
+
+# # Code to randomly select a number from 1 to 10
+# random_number = random.randrange(1, 11)
+# print(random_number)
+
+# # Code to randomly select a number from 0 to 100 in steps of 10
+# random_number = random.randrange(0, 101, 10)
+# print(random_number)
+
+# # Code to simulate rolling a dice by randomly selecting a number from 1 to 6
+# dice_number = random.randrange(1, 7)
+# print("The result of the dice roll:", dice_number)
+
+
+# Importing external modules and using their functions:
+# Usage: Functions can be used in the same way as built-in functions like print.
+
+from random import randrange
+dice = randrange(1, 7)
+print(dice)
+
+# Tip for functions:
+# To check which methods are included in a module:
+# Type the module name followed by a few letters of the method and see what functions are available.
+# Select the desired function and press the Tab key, and the full name will autocomplete.
+
+# import random.randrange
