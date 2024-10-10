@@ -1,0 +1,21 @@
+# Input statement (input) - A function that receives data through input devices like a keyboard
+
+# Basic user input is handled using the input() function
+
+# Receive input value from the user and store it in the variable 'name'
+# name = input("Enter your name: ")
+# print(name)
+
+# Note! The input() function processes the received input as a string
+
+a = input("Enter the first number: ")
+print(a, type(a))
+
+# Convert the received string to an integer
+a = int(a)
+print(a, type(a))
+
+# Experiment with string to number conversion
+c = input("Experiment: ")
+c = int(c)
+print(c, type(c))
