@@ -1,0 +1,11 @@
+# Practicing relational operators
+
+# Relational operators return a boolean result (True, False).
+# Greater than, less than: a < b, a > b, a >= b, a <= b
+# Equals, not equals: a == b, a != b
+
+# Example of using relational operators
+print(10 > 100)
+print(10 < 100)
+print(10 == 100)
+print(10 != 100)
