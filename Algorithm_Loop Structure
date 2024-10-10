@@ -1,0 +1,59 @@
+# Loop structure - Doing the same task efficiently!
+# Repeat the same steps while a condition is satisfied
+
+# Example:
+# 01 - Buy noodles
+# 02 - If the change is more than 1,200 won, keep buying fish-shaped buns *** Repeat this step
+# 03 - If the change is less than 1,200 won, return home.
+
+# Flow control - loops
+
+# Types of loops
+# for - Used when you know the number of repetitions beforehand. Example: Summing values from 1 to 100.
+# while - Used when you don't know how many times to repeat in advance.
+
+# Basic structure of a for loop
+# Repeats the specified range
+# Syntax:
+# for variable in range(start_value, end_value + 1, increment_value):
+#     statement to be repeated (code block)
+
+# Basic structure of a while loop
+# Repeats as long as the condition is true
+# Syntax:
+# while condition:
+#     statement to be repeated (code block)
+
+# Practice with a for loop
+# Print the phrase "Hello Maso Campus" 10 times
+# for i in range(0, 10):
+#     print("Hello Maso Campus")
+
+# print("========================")
+
+# for i in range(1, 11, 2):
+#     print("Hello Maso Campus")
+
+# What is the sum of numbers from 1 to 100?
+tot_num = 0
+
+for i in range(1, 101):
+    tot_num = tot_num + i
+print("The sum from 1 to 100 is: {}".format(tot_num))
+
+# Key code interpretation
+# Why was tot_num initialized to 0?
+# If not initialized, the initial value of the tot_num variable would be undefined.
+# Since you can't perform an operation like undefined + 1, you must set tot_num = 0.
+# If you don't initialize, you'll get an error: "name 'tot_num' is not defined."
+
+# Practice for understanding variable initialization
+# b = 1
+# result = a + b
+# print(result)
+
+# Calculate the sum of odd numbers between 500 and 1000
+tot_num2 = 0
+for i in range(501, 1001, 2):
+    tot_num2 = tot_num2 + i
+print("The sum of odd numbers between 500 and 1000 is: {}".format(tot_num2))
