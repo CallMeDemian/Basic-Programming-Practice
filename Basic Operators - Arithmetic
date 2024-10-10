@@ -1,0 +1,30 @@
+ Arithmetic operators practice
+
+# Addition(+), Subtraction(-), Division(/), Multiplication(*), Exponentiation(**), Remainder(%)
+# To get only the quotient in division, use //, and to get only the remainder, use %.
+
+# Example of using %
+# When performing a million repetitive operations, you may want to know the progress in units of 1000.
+
+# n%1000 == 0 - If the condition is True, handle the logic for that case.
+
+# Basic arithmetic operations practice
+print(1 + 2)
+print(4 / 2)
+print(2 * 2)
+
+# The priority of operations: Parentheses take precedence
+print(1 + 2 * 3)
+print((1 + 2) * 3)
+
+# Getting quotient and remainder
+print("When dividing 5 by 2, the quotient is:", 5 // 2)
+print("When dividing 5 by 2, the remainder is:", 5 % 2)
+
+# Understanding string operations: Only + and * are allowed
+# Predict the result of string operations
+print("a" + "b")
+print("a" * 3)
+print("a" + 3)  # This will cause an error
+print("a" * "b")  # Multiplication between strings also causes an error
+이 코드는 산술 연산자와 문자열 연산에 대한 설명을 영어로 번역한 것입니다.
