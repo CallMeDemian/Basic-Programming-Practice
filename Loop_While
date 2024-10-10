@@ -1,0 +1,39 @@
+# Loop - using a while loop
+
+# Program to print "Hello Demian" 10 times
+i = 0
+while i < 10:
+    print("Hello Demian")
+    i = i + 1
+
+# Comparison with for loop - if the number of repetitions is clear, the for loop is simpler.
+# Program to print "Hello Demian" 10 times
+for i in range(1, 11):
+    print("Hello Demian")
+
+# Things to consider when implementing loops
+# while is more advantageous when you don't know how many times to repeat in advance.
+# In the above example, a for loop is more suitable.
+# In practice, the for loop is more frequently used.
+
+# Designing an experiment to roll a dice
+# Implementing code to keep rolling the dice until it lands on 6.
+
+# If the dice roll is not 6, keep rolling! - using a while loop
+
+# Code implementation design
+# Symbol for equality ==
+# Example: dice == 6 : If the dice roll is 6
+# Symbol for inequality !=
+# Example: dice != 6 : If the dice roll is not 6
+
+import random
+
+dice = 0  # Initializing the variable
+while dice != 6:
+    # Code to keep rolling the dice
+    dice = random.randrange(1, 7)
+    print("This dice roll is: {}".format(dice))
+
+# Code that runs after exiting the while loop
+print("Since the dice roll was 6, we successfully exited the while loop!")
