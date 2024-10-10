@@ -1,0 +1,15 @@
+# When a variable is declared, memory is used in the Python program.
+# The more variables you use, the more memory is consumed.
+# Therefore, a good program explicitly deletes variables when they are no longer needed.
+
+# Declare a new variable
+new_var = "Hello Demian"
+
+# Check the value stored in the variable
+print(new_var)
+
+# How to delete a declared variable
+del(new_var)
+
+# How to check if the variable was successfully deleted?
+print(new_var)
