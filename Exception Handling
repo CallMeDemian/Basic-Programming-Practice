@@ -1,0 +1,104 @@
+# Introduction to Exception Handling
+# Let's simulate a situation where an exception occurs and check the system error message.
+
+# 1. Raising an Exception
+import os
+os.remove("C:/fruit00.csv")  # Exception will be raised
+
+
+# Code 1
+# Code 2
+
+## Proceeding with Exception Handling
+
+# Basic structure of exception handling
+# try:
+#     Code that may raise an exception
+# except:
+#     Code that runs when an exception occurs
+
+# Handling exception when the OS tries to delete a file that doesn't exist
+import os
+try:
+    os.remove("C:/fruit00.csv")
+except:
+    print("The file does not exist. Please check the file name you want to delete.")
+
+print("Additional code execution!")
+print("----- End of Code -----")
+
+
+## Exception Handling Based on Error Types
+
+# 1) except ValueError
+# 2) except ZeroDivisionError
+# 3) except KeyboardInterrupt
+
+num1 = input("Enter number 1: ")
+num2 = input("Enter number 2: ")
+
+try: 
+    num1 = int(num1)
+    num2 = int(num2)
+    while True:
+        res = num1 / num2
+        print(res)
+except ValueError:
+    print("Cannot convert letters to numbers.")
+except ZeroDivisionError:
+    print("Cannot divide by 0.")
+except KeyboardInterrupt:
+    print("User forcibly terminated the program.")
+
+
+## Practice with try, except, else, and finally blocks
+
+# If an error occurs in the try block, the program jumps to the except block.
+# If no error occurs, the program proceeds to the else block.
+# The finally block is executed regardless of whether an error occurs or not.
+
+# Practice code implementation
+num1 = input("Enter a number: ")
+num2 = input("Enter a number: ")
+
+try:
+    num1 = int(num1)  # Assumption: File open / File processing
+    num2 = int(num2)
+except:
+    print("An error occurred.")
+else:
+    print(num1, '/', num2, '=', num1 / num2)
+    # File processing
+finally:
+    print("The program is ending.")  # This statement is printed in both error and normal cases.
+    # File closing
+
+
+## Practice with try ~ finally block - Comprehensive Exception Handling Practice
+
+# Syntax: try ~ except ~ else ~ finally
+# 1) If an error occurs in the try block, the program jumps to the except block.
+# 2) If no error occurs, the program proceeds to the else block.
+# 3) The finally block is executed regardless of whether an exception occurs or not.
+
+num1 = input("Enter number 1: ")
+num2 = input("Enter number 2: ")
+
+try:
+    num1 = int(num1)
+    num2 = int(num2)
+
+    print(num1, '/', num2, '=', num1 / num2)
+except ValueError:
+    print("Please enter a number, not letters.")
+except ZeroDivisionError:
+    print("Cannot divide by 0.")
+except KeyboardInterrupt:
+    print("The user pressed ctrl + c.")
+except:
+    print("Some error occurred while running the program.")
+else:
+    print("Logic for cases where no errors occur can be added.")
+finally:
+    print("The program is ending.")  # This statement is always executed!
+    print("This code will always be executed during the program's runtime.")
