@@ -1,0 +1,28 @@
+# Output statement (print) - A function to display data on the screen
+
+print("Hello, Python")
+
+# Using the print() function to display strings
+# value: The data value to be printed
+# sep: The character inserted between the data values, default is a space
+# end: The character to be printed at the end, default is a newline (\n)
+# file: The file to print to, default is sys.stdout
+# flush: Whether to flush the output buffer, default is False
+
+# print(): Hover the mouse over the function to see detailed information
+
+print(1, 2, 3, sep=",", end=" ")
+print(4, 5, 6, sep=" and ", end="$")
+
+# Coding style: Single character = '', two or more characters = ""
+
+print(1)
+print(2)
+print(3)
+
+print(1, end="")
+print(2, end="")
+print(3, end="")
+
+print("Hello, ", end="")
+print("Call me Demian")
