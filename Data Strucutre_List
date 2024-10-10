@@ -1,0 +1,342 @@
+## Introduction to Lists
+
+# Let's understand the need for lists through variable practice
+
+a = 10
+b = 20
+c = 30
+d = 40
+
+print(a, b, c, d)
+
+# Let's change the above code using a list
+aa = [10, 20, 30, 40]
+print(aa)
+print(type(aa))
+
+bb = [10, 'a', True]
+print(bb)
+
+# Getting a specific item from the list
+cc = [10, 20, 30, 40, 50]
+print(cc[0], cc[2], cc[4])
+
+# List data structure practice
+# Implement a list containing fruits like apple, pear, grape, strawberry
+fruit = ["Apple", "Pear", "Grape", "Strawberry"]
+print(fruit)
+
+list_k = ["Curriculum", "Admissions by student record", "Essay", "Regular admission"]
+print(list_k[0], list_k[3])
+
+# Program Development Terminology
+# Design Time vs. Runtime
+
+# The screen where I input the code, where developers write code - Design Time
+
+aa = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]  # List from 0 to 9
+print(aa, type(aa))
+
+
+## Practicing list creation using range() function / list() function
+
+r = range(10)
+print(r, type(r))
+
+a = list(r)
+print(a, type(a))
+
+# Using range to create a list of even numbers between 0 and 10
+r2 = range(2, 11, 2)
+a2 = list(r2)
+print(a2, type(a2))
+
+# Using range to create a list of multiples of 3 between 0 and 10
+r3 = range(3, 11, 3)
+a3 = list(r3)
+print(a3, type(a3))
+
+# Using range to create a list of numbers from 10 to 1
+r4 = range(10, 0, -1)
+a4 = list(r4)
+print(a4, type(a4))
+
+# Retrieving values from a list data structure
+# Using a for loop to retrieve values from a list
+
+# Understanding the basic structure
+
+# Structure 1 usage
+# for variable in range(0, n):
+#     statement
+
+# Structure 2 usage
+# for variable in list:
+#     statement
+
+# Practice for Structure 1
+number_list = [10, 20, 30, 40]
+for i in range(0, 4):
+    print(number_list[i])
+
+# Practice for Structure 2
+mix_list = [10, "Demian", True]
+for j in mix_list:
+    print(j)
+
+
+## Applying arithmetic operations to a list - Summing values
+
+a = [10, 20, 30, 40]
+
+# Method 1
+# Declare a variable to hold the sum
+sum_num1 = 0
+for i in range(0, 4):
+    sum_num1 = sum_num1 + a[i]
+    # print(a[i])
+print(sum_num1)
+
+# Method 2
+sum_num2 = 0
+for j in a:
+    sum_num2 = sum_num2 + j
+print(sum_num2)
+
+
+## Displaying list items with their order - using the enumerate() function
+
+# Let's print the array [10, 20, 30, 40] in the form '1st:10', '2nd:20', ...
+
+# When not using the enumerate() function
+a = [10, 20, 30, 40]
+order = 1
+
+for i in a:
+    print("{}th: {}".format(order, i))
+    order = order + 1
+
+print("=====================")
+
+
+## Practice changing values in a list
+
+# Declare & print the list
+a = [10, 20, 30, 40]
+print(a)
+
+# Value change practice 1
+
+# Change the 1st value (10) to 100
+a[0] = 100
+print(a)
+
+# Change the 3rd value (30) to 300
+a[2] = 300
+print(a)
+
+# Value change practice 2
+b = [10, 20, 30, 40]
+print(b)
+
+# What happens if we try to change a value at an index that doesn't exist?
+b[4] = 500
+print(b)
+
+
+# When using the enumerate() function
+# Index starts from 0 - Default
+b = [10, 20, 30, 40]
+
+for idx, val in enumerate(b):
+    print("{}th: {}".format(idx, val))
+
+print("=====================")
+
+c = [10, 20, 30, 40]
+
+for idx, val in enumerate(c, start=1):
+    print("{}th: {}".format(idx, val))
+
+print("=====================")
+
+
+## Practice deleting values from a list
+
+# Method 1 - Empty the list
+a = [10, 20, 30, 40]
+print(a)
+
+a = []
+print(a)
+
+# Method 2 - Using None
+b = [10, 20, 30, 40]
+print(b)
+
+b = None
+print(b)
+
+# Note: In Python, None represents the absence of a value.
+# In other languages, it might be referred to as Null or nil.
+
+# Practice using None
+a = None
+if a is None:
+    print("There is no value assigned to 'a'.")
+
+# Method 3 - Using the del keyword
+c = [10, 20, 30, 40]
+print(c)
+
+del(c)
+print(c)
+
+
+## List functions summary
+# sort(), reverse()
+# len() vs. count()
+# del() vs. remove()
+# append() vs. insert()
+
+# Sorting or changing the order of list values
+
+# Ascending order sorting
+a = [10, 20, 30, 15, 20, 40]
+print(a)
+print("=====================================")
+a.sort()
+print(a)
+
+# Descending order sorting
+print("=====================================")
+b = [10, 20, 30, 15, 20, 40]
+print(b)
+b.sort(reverse=True)
+print(b)
+
+# Reversing the order of list items
+print("=====================================")
+c = [10, 20, 30, 15, 20, 40]
+print(c)
+c.reverse()
+print(c)
+
+# Counting list elements: len() vs. count()
+print("=====================================")
+d = [10, 20, 30, 15, 20, 40]
+
+# Display the list
+print("List items: ", d)
+
+# Checking the length of the list
+print("List length: ", len(d))
+
+# How many times does 20 appear in the list?
+print("Number of 20 in the list: ", d.count(20))
+
+# Note: You can check if a specific value exists in the list using count()
+
+e = [10, 20, 30, 15, 20, 40]
+
+if e.count(10) > 0:
+    print("10 exists in the list.")
+
+if e.count(100) == 0:
+    print("100 does not exist in the list.")
+
+# Checking for duplicate values in the list using count()
+print("=====================================")
+f = [10, 20, 30, 15, 20, 40]
+
+if f.count(20) > 1:
+    print("20 is duplicated in the list.")
+
+# Adding and removing values from a list
+
+# Deleting list items using del(index)
+print("=====================================")
+
+g = [10, 20, 30, 15, 20, 40]
+print(g)
+del(g[1])
+print(g)
+
+# Deleting list items using remove(value)
+# If there are multiple occurrences, only the first one will be removed.
+print("=====================================")
+h = [10, 20, 30, 15, 20, 40]
+print(h)
+h.remove(20)
+print(h)
+h.remove(20)
+print(h)
+
+# Deleting all instances of a value in the list using a loop
+print("=====================================")
+m = [10, 20, 30, 15, 20, 40]
+print(m)
+
+# Remove all instances of 20
+target = 20
+target_count = m.count(target)
+
+for i in range(0, target_count):
+    m.remove(target)
+
+print(m)
+
+# Adding values to a list
+print("=====================================")
+k = [10, 20, 30, 15, 20, 40]
+print("Original list: ", k)
+print("Original length: ", len(k))
+
+# Modifying the list
+k.append(100)
+k.insert(3, 200)
+
+print("Modified list: ", k)
+print("Modified length: ", len(k))
+
+
+## Practicing loops and iterable data types
+
+# for variable in iterable_data_type:
+# After "in", an iterable data type must be used.
+
+# Various types of iterable data types
+
+list_type = [1, 2, 3, 4, 5]  # Type 1
+tuple_type = (1, 2, 3, 4, 5)  # Type 2
+set_type = {1, 2, 3, 4, 5}  # Type 3
+dictionary_type = {"k1": 1, "k2": 2, "k3": 3}  # Type 4
+string_type = "12345"  # Type 5
+range_type = range(1, 6)  # Type 6
+
+# Practicing with Type 1 (list)
+print("Practicing with Type 1")
+for i in list_type:
+    print("Type: {}, Value: {}".format(type(list_type), i))
+print("=====================================")
+
+# Practicing with Type 2 (tuple)
+print("Practicing with Type 2")
+for i in tuple_type:
+    print("Type: {}, Value: {}".format(type(tuple_type), i))
+print("=====================================")
+
+# Practicing with Type 6 (range)
+print("Practicing with Type 6")
+for i in range_type:
+    print("Type: {}, Value: {}".format(type(range_type), i))
+print("=====================================")
+
+# If the data type is not iterable ---> Error occurs!
+# int_type = 12345
+
+# print("Practicing with int_type")
+# for i in int_type:
+#     print("Type: {}, Value: {}".format(type(int_type), i))
+# print("=====================================")
+
