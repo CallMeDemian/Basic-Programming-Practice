@@ -1,0 +1,65 @@
+# break, continue statements - used to exit or continue a loop
+
+# Practicing break statement
+for i in range(1, 11):
+    # Code block to be executed in the loop
+    print("Executed the for loop {} times.".format(i))
+    break
+print("The for loop has ended.")
+
+# Calculating the sum from 1 to 100 - but excluding multiples of 3
+
+# Pseudocode
+# 1) Use a for loop to calculate the sum from 1 to 100
+# 2) Exclude multiples of 3 from the sum
+# 3) Print the total sum
+
+# Declare a variable to hold the sum
+tot_num = 0
+
+for i in range(1, 101):
+    tot_num = tot_num + i
+print("The sum from 1 to 100 is {}.".format(tot_num))
+
+tot_num2 = 0
+for i in range(1, 101):
+    # Check for multiples of 3
+    if i % 3 == 0:
+        continue
+    tot_num2 = tot_num2 + i
+print("The sum from 1 to 100, excluding multiples of 3, is {}.".format(tot_num2))
+
+# Things to consider when using loops
+# If you're in a situation where you need to use the continue statement,
+# it is highly recommended to recheck the code.
+
+# Calculating the sum from 1 to 100 excluding multiples of 3 without using the continue statement
+tot_num3 = 0
+
+for i in range(1, 101):
+    if i % 3 != 0:
+        tot_num3 = tot_num3 + i
+print("The sum from 1 to 100, excluding multiples of 3, is {}.".format(tot_num3))
+
+# Practical project using loops
+# Goal - Use break to stop rolling the dice once you roll a 6
+
+import random
+
+# Logic design
+# Write a condition where while is True
+# Implement code to roll a dice - using the randrange() function
+# Print the rolled dice value
+
+dice = 0
+
+while True:
+    dice = random.randrange(1, 7)
+    print("This dice roll is: {}".format(dice))
+
+    # Set a condition to stop rolling the dice
+    # Use the break statement to set the exit condition
+    # Exit condition: When the dice roll is 6
+    if dice == 6:
+        break
+print("You rolled a 6, successfully exiting the while loop!")
