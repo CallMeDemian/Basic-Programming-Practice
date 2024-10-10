@@ -1,0 +1,41 @@
+# Practicing conditional statements
+
+# Number comparison - using if ~ elif ~ else
+
+# After implementing the example below, try running it with inputs 50, 150, and 250.
+
+# a = int(input("Enter a number: "))
+# print(a, type(a)) Bug!!
+
+# if a > 100: 
+#     print("{} <-- is greater than 100.".format(a))
+# elif a > 200:
+#     print("{} <-- is greater than 200.".format(a))
+# else: 
+#     print("{} <-- is less than or equal to 100.".format(a))
+# print("Program ends!!!")
+
+# Problem solution 1 - Using Nested if statements
+# b = int(input("Enter a number: "))
+
+# if b > 100:
+#     if b > 200:
+#         print("{} <-- is greater than 200.".format(b))
+#     else:
+#         print("{} <-- is greater than 100.".format(b))
+#         # GitHub Copilot free beta 1-month setup.
+# else:
+#     print("{} <-- is less than or equal to 100.".format(b))
+# print("---- End of Code ----")
+
+# Problem solution 2
+# Solving the problem by comparing as if narrowing down the range
+c = int(input("Enter a number: "))
+
+if c > 200:
+    print("{} <-- is greater than 200.".format(c))
+elif c > 100:
+    print("{} <-- is greater than 100.".format(c))
+else:
+    print("{} <-- is less than or equal to 100.".format(c))
+print("---- End of Code ----")
