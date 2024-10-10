@@ -1,0 +1,37 @@
+# Data Structure Types
+# List, Tuple, Dictionary, Set
+
+# Dictionary
+# A data structure consisting of multiple unordered key-value pairs
+# Keys must be unique
+# Example: {"key1": "value1", "key2": "value2", ...}
+
+# A dictionary is like a collection of key-value pairs, similar to a real dictionary
+# You can search using the key
+# Equivalent to the Map data structure in other languages
+
+## Practice defining and using a dictionary in code
+
+student = {'ID': 1000, 'Name': 'Demian', 'Department': 'Artificial Intelligence'}
+print(student)
+
+# Accessing values using keys
+print(student['ID'])
+
+print(student['Department']) 
+
+
+## Cafe menu program using a dictionary
+
+# Declare dictionary
+menu = {
+    "Americano": 2500,
+    "Milk Tea" : 5500, 
+    "Cappuccino" : 4000, 
+    "Cafe Latte" : 3000,
+    "Smoothie" : 5000
+}
+
+# Print the price of a smoothie
+smoothie_price = menu["Smoothie"]
+print("The price of a smoothie is {} won.".format(smoothie_price))
