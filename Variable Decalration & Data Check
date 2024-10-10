@@ -1,0 +1,19 @@
+# Variable declaration and data type check
+
+# Data = characters/numbers + boolean
+# Variable = a container that holds data
+# Deciding the data stored in a variable: data type
+# Function to check the data type: type()
+
+a = 100
+print(a)
+
+b = input("Press Enter to exit")
+if b == "":
+    print("Exiting.")
+else:
+    print("Not exiting.")
+
+d = 100 < 10
+print(d)
+print(type(d))
