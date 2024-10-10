@@ -1,0 +1,9 @@
+# Calculator using built-in string functions
+
+import os
+
+while True:
+    os.system("cls")
+    s = input("Enter calculation > ")
+    print("Calculation result: {}".format(eval(s)))
+    os.system("pause")
