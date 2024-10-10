@@ -39,3 +39,18 @@ elif c > 100:
 else:
     print("{} <-- is less than or equal to 100.".format(c))
 print("---- End of Code ----")
+
+# Practicing the use of relational operators
+# You can implement code without using Nested if
+# Advantage: In general, the code becomes more concise, thus improving readability.
+
+# Problem solution 3 - Solving the problem using relational operators
+d = int(input("Enter a number: "))
+
+if d > 100 and d <= 200:  # Example of using relational operators
+    print("{} <-- is greater than 100.".format(d))
+elif d > 200:
+    print("{} <-- is greater than 200.".format(d))
+else:
+    print("{} <-- is less than or equal to 100.".format(d))
+print("---- End of Code ----")
