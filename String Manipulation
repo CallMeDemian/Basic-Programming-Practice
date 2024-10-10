@@ -1,0 +1,118 @@
+# Practicing string manipulation
+
+s1 = 'Demian'
+s2 = "Demian"
+
+print(s1, type(s1))
+print(s2, type(s2))
+
+s3 = '''De
+mi
+an'''
+
+print(s3, type(s3))
+
+# String operators: + *
+s4 = "AI-based "
+s5 = "Developer Training Program"
+print(s4 + s5)
+
+print(s4 * 10)
+
+print("=" * 20)
+
+
+## Learning the concept and usage of string indexing and slicing
+
+# Strings are sequences of characters.
+# Therefore, each character has a position (index).
+# String indexing refers to the integer value that each character holds.
+# String slicing refers to extracting specific parts of a string.
+
+a = "Demian"
+
+# String indexing
+print(a[0])
+print(a[3])
+print(a[-1])
+
+# String slicing
+print(a[0:2])
+print(a[2:4]) 
+
+
+## String built-in functions
+
+# count() : Count how many times a specific substring appears in the string
+a = "Call me Demian"
+res = a.count('C')
+print(res)
+
+# find() : Return the index where a specific substring starts
+b = "Call me Demian"
+res = b.find('C')
+print(res)
+
+# index() : Return the index where a specific substring starts
+c = "Call me Demian"
+res = c.index('C')
+print(res)
+
+# upper(), lower() : Convert to uppercase and lowercase
+d = "Call me demian"
+res = d.upper()
+print(res)
+
+res = d.lower()
+print(res)
+
+# replace() : Replace a specific substring in the string with another substring
+e = "Call me Demian"
+res = e.replace('Call', 'Watch')
+print(res)
+
+e1 = "Call me Demian"
+res = e1.replace(' ', '')
+print(res)
+
+# lstrip(), rstrip(), strip() : Remove specific characters from the string
+f = "   Call me Demian   "
+print(len(f))
+res = f.lstrip()
+print(res, len(res))
+
+res = f.rstrip()
+print(res, len(res))
+
+res = f.strip()
+print(res, len(res))
+
+# split() : Split the string based on a specific delimiter and return a list
+g = "Call me Demian"
+res = g.split(' ')
+print(res)
+
+# join() : Join the list into a string with a specific delimiter
+h = ['Call', 'me', 'Demian']
+res = ''.join(h)
+print(res)
+
+# title() : Convert the first letter of each word in the string to uppercase
+i = "Call me Demian"
+res = i.title()
+print(res)
+
+# startswith(), endswith() : Check if the string starts or ends with a specific substring
+j = "Call me Demian"
+res = j.startswith('Maso')  # True or False
+print(res)
+
+res = j.startswith('maso')  # True or False
+print(res)
+
+res = j.endswith('Campus')  # True or False
+print(res)
+
+res = j.endswith('campus')  # True or False
+print(res)
+
