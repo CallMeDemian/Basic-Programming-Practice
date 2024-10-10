@@ -1,0 +1,32 @@
+# Printing multiplication table for 2 vs. Printing tables for 2 through 9
+
+# Setting a goal to implement the multiplication table for 2
+# Coding with pseudocode
+# Fix the value of 2
+# Represent the multiplication symbol as "x"
+# Multiply by numbers from 1 to 9
+
+# Output format:
+# 2 x 1 = 2
+# 2 x 2 = 4
+# ...
+# 2 x 9 = 18
+
+# for i in range(1, 10):
+#     print("2 x {} = {}".format(i, 2 * i))
+
+# Implementing the multiplication tables from 2 to 9
+# Repeat for numbers 2 to 9, and for each, multiply by numbers 1 to 9
+# To distinguish between tables, print "--" * 10 after each table
+
+# Output format:
+# 2 times table -- 2 x 1 = 2
+# ---------------------
+# 3 times table -- 3 x 1 = 3
+
+# Nested for loop: A structure where a for loop is inside another for loop
+
+for a in range(2, 10): 
+    for b in range(1, 10): 
+        print("{} x {} = {}".format(a, b, a * b))
+    print("--" * 10)
