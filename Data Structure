@@ -1,0 +1,25 @@
+# Data Structure
+# Types of data structures
+# List, Tuple, Dictionary, Set
+
+# List
+# A one-dimensional data arrangement structure
+# Example: [1, 2, 3, 4, 5]
+# Index - Refers to the position of data in the structure
+# Index starts from 0
+
+# Tuple
+# An immutable data arrangement structure
+# Example: (1, 2, 3, 4, 5)
+# Read-only data structure - The values inside the structure cannot be changed
+# Tuples have indexes but no methods related to order
+
+# Set
+# A data structure with no order and only unique values
+# Example: {1, 2, 3}
+# {1, 2, 3, 2} => {1, 2, 3}
+
+# Dictionary
+# An unordered data structure made up of multiple key-value pairs
+# Keys must be unique
+# Example: {"key1": "value1", "key2": "value2", ...}
