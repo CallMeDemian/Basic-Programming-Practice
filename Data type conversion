@@ -1,0 +1,67 @@
+# Data type conversion practice = type casting = casting
+
+# Data = characters/numbers
+# Container to hold data = variable
+# Data type of the variable = data type
+
+# String numbers are characters
+# Variable declaration: variable_name = value to be assigned
+
+a = "100"
+# print(a)
+# print(type(a))
+
+# a = a + "Hi"
+# print(a)
+
+# Convert string number to an integer
+# a = int(a)
+# print(a)
+# print(type(a))
+
+# b = 100
+
+# print(a + b)
+
+# Convert a number to a string number
+# c = 100 
+# print(c, type(c))
+
+# c = str(c)
+# print(c, type(c))
+
+# Convert an integer to a float: float()
+# d = 100
+# print(d, type(d))
+
+# d = float(d)
+# print(d, type(d))
+
+# Declare and print a string 'True'
+e = 'True'
+print(e, type(e))
+
+# Convert the string 'True' to a boolean
+e = bool(e)
+print(e, type(e))
+
+# In the case of booleans, if data exists, it will always be True
+# However, if the data is empty or 0, it will be False
+# In bool, "0" and "None" are considered False
+# Any number greater than or equal to 1 is considered True
+
+g = "False"
+g = bool(g)
+print("1st: ", g, type(g))
+
+f = "Student"
+f = bool(f)
+print("2nd: ", f, type(f))
+
+h = 0
+h = bool(h)
+print("3rd: ", h, type(h))
+
+i = 1
+i = bool(i)
+print("4th: ", i, type(i))
