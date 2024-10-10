@@ -1,0 +1,81 @@
+## Write a program that takes a date in the format of year/month/day 
+## and prints the date 10 years later.
+
+# Date format = '2300/10/11'
+
+dd = input("Enter a date (year/month/day): ")
+
+ddList = dd.split('/')
+
+print("10 years after the entered date => ", end="")
+print(str(int(ddList[0]) + 10) + " year ", end="")
+print(ddList[1] + " month ", end="")
+print(ddList[2] + " day")
+
+## String formatting and padding practice
+
+mm = "Call me Demian"
+print(mm, len(mm))
+
+print(mm.center(30), len(mm.center(30)))
+
+print(mm.center(30, '-'), len(mm.center(30, '-')))
+
+print(mm.ljust(30), len(mm.ljust(30)))
+
+print(mm.rjust(30), len(mm.rjust(30)))
+
+print(mm.zfill(30), len(mm.zfill(30)))
+
+h = '3'
+print(h.zfill(2))
+
+
+## String composition checking practice
+
+a = "12345"
+print(a, a.isdigit())
+
+b = "1234abcd"
+print(b, b.isdigit())
+
+c = "abcd"
+print(c, c.isalpha())
+
+d = "MasoCampus"
+print(d, d.isalpha())
+
+e = "1234abcdMasoCampus"
+print(e, e.isalnum())
+
+f = "masocampus"
+print(f, f.islower())
+
+g = "          "
+print(g, g.isspace())
+
+
+## Implementing a program to take a string as input and print it in reverse
+
+# Concept - String indexing
+# mm = "Learning AI at MasoCampus"
+# res = mm[0] # Sequential indexing
+# print(res)
+
+# res = mm[-1] # Reverse indexing
+# print(res)
+
+# Enter a string - Get its length and print it in reverse
+
+inStr = input("Enter a string: ")
+
+# Get the string length
+lenStr = len(inStr)
+
+# Print in reverse
+outStr = ""
+
+for i in range(0, lenStr):
+    outStr = outStr + inStr[lenStr - (i + 1)]
+
+print("Reversed output --> {}".format(outStr))
