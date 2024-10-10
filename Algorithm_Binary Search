@@ -1,0 +1,47 @@
+# What makes a good algorithm?
+
+# Egg Drop Competition
+# Description: You create a shock absorber to prevent the egg from breaking.
+# Then, to test the performance of the shock absorber, you drop an egg from a 
+# 100-story building and see how many floors the egg can withstand without breaking.
+# At which floor does the egg break?
+
+# Algorithm 1 - The simplest method
+# Step - Drop the egg starting from the first floor and go up one floor at a time.
+# -> If the egg breaks on the 100th floor, 100 attempts are required.
+# Method - Sequential structure + selection structure
+# Method = Sequential structure + selection structure + loop structure
+
+# Algorithm 2 - A more efficient method
+# Step - Start at the 50th floor
+# Explanation - Start at the middle floor and cut the range in half with each attempt.
+# Continue until there are no more floors to move to.
+
+# Assuming the egg keeps breaking, how many attempts would be needed?
+# 50th floor -> 25th floor -> 13th floor -> 6th floor -> 3rd floor -> 2nd floor -> 1st floor
+
+# Algorithm name: Binary Search Algorithm
+# In this case, it takes at most 7 attempts to find the floor where the egg breaks.
+
+# If the goal is to write code that is easy for the development team to understand
+# and for new team members to communicate easily, Algorithm 1 may be more efficient.
+
+# So, when should Algorithm 2 be used?
+# Algorithm 2 should be used in cases where 'performance' is a critical factor in program development.
+# For example, in game server development, if the server needs to handle 1,000 simultaneous users,
+# improving the core algorithm by 10% can allow the same server to handle 1,100 users.
+
+# In a situation where you're developing/operating a large-scale service,
+# in 90% of cases, writing code that is easy to understand and communicate with
+# may be more efficient, and only in a very small percentage of cases (10% assumed here),
+# implementing performance-critical algorithms may be more efficient.
+
+# Algorithm 3 - Intuition
+# You intuit that the device can at least withstand up to 4 floors.
+# You start testing at around the 6th or 7th floor to reduce the number of experiments.
+# This is an intuition-based decision-making approach.
+
+# Algorithm 4 - Data-driven
+# Based on past data, you find records showing that an inferior tool withstood up to 30 floors.
+# So, you start your first experiment at a floor above 31 to reduce the number of attempts.
+# This is a data-driven decision-making approach.
