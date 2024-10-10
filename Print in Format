@@ -1,0 +1,78 @@
+# Formatting and output
+
+# What is formatting?
+# Output like "Name: John Doe, Employee ID: 0000, Salary: 10,000 million won"
+
+# Formatting output - Old style
+
+# %d : Integer - Decimal
+# %f : Float - Displays up to 6 decimal places
+# %s : String - Outputs the string as is
+# %c : Character - Outputs a character
+# %o : Octal
+# %x : Hexadecimal
+# %e : Scientific notation
+# %g : Uses %f or %e depending on the value
+# %r : String - Outputs the string as is
+# %a : String - Outputs the string in ASCII code
+# %u : Unsigned integer
+# %p : Memory address
+
+print("%d %f %s" % (100, 0.5, "Demian"))
+print("%d %d %s" % (100, 0.5, "Demian"))
+print("%d %.1f %s" % (100, 0.5, "Demian"))
+print("%d %.2f %s" % (100, 0.5, "Demian"))
+
+# Escape characters - special characters like tab, enter
+# \n : New line
+# \t : Tab
+# \\ : Backslash
+# \' : Single quote
+# \" : Double quote
+# \r : Moves the cursor to the beginning of the line
+# \b : Backspace
+
+# New method - Using the format() function for output
+# The old formatting style required knowing the data type, but the format() style is type-agnostic
+# format() usage format - "{input order : format string}".format(values)
+# format() - Can output as many data points as specified by the curly braces
+
+# Basic usage: using just {}
+print("{0} plus {2:5d} is {1:5d}.".format(1, 2, 3))
+
+print("Float: {}, two decimal places: {:.2f}, three decimal places {:.3f}".format(3.14195, 3.14195, 3.14195))
+
+# Display with comma for thousands separator
+print("Amount:  {:,d}".format(1000000))
+
+# Print menu aligned
+# Menu name 10 characters, price 6 digits (including comma for thousands separator)
+# Americano         : 3,000 won
+# Latte             : 4,000 won
+# Cappuccino        : 4,500 won
+# Tea               : 3,500 won
+
+print("{:15s} : {:,d} won".format("Americano", 3000))
+print("{:15s} : {:,d} won".format("Latte", 4000))
+print("{:15s} : {:,d} won".format("Cappuccino", 4500))
+print("{:15s} : {:,d} won".format("Tea", 3500))
+
+print("{:10} : {:6,} won".format("Americano", 3000))
+print("{:10} : {:6,} won".format("Latte", 4000))
+print("{:10} : {:6,} won".format("Cappuccino", 4500))
+print("{:10} : {:6,} won".format("Tea", 3500))
+
+# Using variables to output
+name = "Call me Demian"
+emp_id = 220085
+dept = "Corporate Finance Team"
+
+# Output goal: Print as follows
+# Name: John Doe (231001)
+# Department: HR
+
+print("Name: {}({})".format(name, emp_id))
+print("Department: {}".format(dept))
+
+# Using escape characters to print
+print("\"{}\" plus \"{}\" is \"{}\".".format(1, 2, 3))
