@@ -1,0 +1,15 @@
+# Selection structure - What if!
+# This structure evaluates a condition and decides whether to execute the code block based on the result.
+
+# Declare variables to print
+name1 = "Call me Demian"
+name2 = "Demian"
+
+# Example of executing a code block in a conditional structure
+# 1. When the condition is True
+if True:
+    print("Hello: " + name1)  # Check if the statement is executed: Yes
+
+# 2. When the condition is False
+if False:
+    print("Hello: " + name2)  # Check if the statement is executed: No
