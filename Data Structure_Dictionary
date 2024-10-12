@@ -23,15 +23,21 @@ print(student['Department'])
 
 ## Cafe menu program using a dictionary
 
-# Declare dictionary
+# dictionary declaration
 menu = {
     "Americano": 2500,
-    "Milk Tea" : 5500, 
-    "Cappuccino" : 4000, 
-    "Cafe Latte" : 3000,
-    "Smoothie" : 5000
+    "Milk Tea": 5500,
+    "Cappuccino": 4000,
+    "Cafe Latte": 3000,
+    "Smoothie": 5000
 }
 
-# Print the price of a smoothie
-smoothie_price = menu["Smoothie"]
-print("The price of a smoothie is {} won.".format(smoothie_price))
+# Get user input for the menu
+user_input = input("Please enter a menu item: ")
+
+# Check if the entered item is in the menu and print the price
+if user_input in menu:
+    price = menu[user_input]
+    print("The price of {} is {} won.".format(user_input, price))
+else:
+    print("Sorry, the menu item you entered is not available.")
