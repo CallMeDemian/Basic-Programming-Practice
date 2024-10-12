@@ -1,0 +1,40 @@
+# Grade Calculator Program
+
+# Goal - Pseudocode
+# Get the score as input and print the grade as follows:
+# If the score is 90 or above, print "You got an A."
+# If the score is 80 or above but less than 90, print "You got a B."
+# If the score is 70 or above but less than 80, print "You got a C."
+# If the score is 60 or above but less than 70, print "You got a D."
+# If the score is less than 60, print "You got an F."
+
+# Implementation
+
+# Get the score as input and assign it to a variable
+score = int(input("Enter your score: "))
+
+# Implement the logic
+# if score >= 90:
+#     print("You got an A.")
+# elif score >= 80 and score < 90:
+#     print("You got a B.")
+# elif score >= 70 and score < 80:
+#     print("You got a C.")
+# elif score >= 60 and score < 70:
+#     print("You got a D.")
+# else:
+#     print("You got an F.")
+
+# Simpler implementation
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"You got a {grade}.")
