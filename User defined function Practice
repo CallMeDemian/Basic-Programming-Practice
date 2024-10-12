@@ -1,0 +1,125 @@
+# Simple practice for implementing user-defined functions
+
+# Basic structure of a function
+# def function_name(parameters):
+#     statement
+#     return return_value
+
+# Function declaration
+def plus(x, y):
+    result = 0
+    result = x + y
+    return result
+
+# Function call
+a = int(input("Enter the first number to add: "))
+b = int(input("Enter the second number to add: "))
+print("The sum of the two numbers is", plus(a, b), ".")
+
+
+## Implementing a calculator program using user-defined functions
+
+# Function declaration
+def calc(x, y, op):
+    result = 0
+    if op == '+':
+        result = x + y
+    elif op == '-':
+        result = x - y
+    elif op == '*':
+        result = x * y
+    elif op == '/':
+        result = x / y
+    return result
+
+# Global variable declaration
+f_value = 0
+var1, var2, oper = 0, 0, ''
+
+# Main code
+var1 = int(input("Enter the first number: "))
+oper = input("Enter the operator (+,-,*,/): ")
+var2 = int(input("Enter the second number: "))
+
+f_value = calc(var1, var2, oper)
+
+print("Calculation: %d %s %d = %d" % (var1, oper, var2, f_value))
+
+
+## Understanding local and global variables and scope
+
+# Main execution code area
+m = 20 # Global variable
+print("Variable in main: {}".format(m))
+
+def func1(): # Local variable
+    m = 10
+    print("Variable in function: {}".format(m))
+
+def func2(): # Local variable
+    print("Variable in function: {}".format(m))
+
+func1()
+func2()
+
+
+# Practice using the 'global' keyword - when you want to use a global variable instead of a local one
+
+# Main execution code area
+m = 20 # Global variable
+print("Variable in main: {} -> value before function call".format(m))
+
+def func3():
+    m = 10 # Local variable
+    print("Variable in func3(): {}".format(m))
+
+def func4():
+    print("Variable in func4(): {}".format(m))
+
+func3()
+func4()
+
+
+## Practice with function return values
+
+# Function declarations
+
+# Function with a return value
+def return_test():
+    result = 100
+    return result
+
+# Function without a return value
+def return_test2():
+    print("This function has no return value.")
+
+# Main code execution
+res = return_test()
+print("Output of the function with return value: {}".format(res))
+
+return_test2()
+
+
+## Implementing a function with multiple return values
+
+# Returning as a list
+
+# Function declaration
+def multi_return(x1, x2):
+    return_list = [] # List to return
+    res1 = x1 + x2
+    res2 = x1 - x2
+    res3 = x1 * x2
+    res4 = x1 / x2
+    return_list.append(res1)
+    return_list.append(res2)
+    return_list.append(res3)
+    return_list.append(res4)
+    return return_list
+
+# Main code execution
+my_list = [] # List to receive return values
+my_list = multi_return(100, 50) # Iterable data type -> can be implemented with a for loop
+
+for i in my_list:
+    print("Return value from multi_return(): {}".format(i))
