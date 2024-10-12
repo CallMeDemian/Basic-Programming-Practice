@@ -1,0 +1,21 @@
+# Practice using user-defined modules
+
+# Import the module
+import Module1
+
+# Call functions inside the module
+Module1.func1()
+Module1.func2()
+Module1.func3()
+
+# Calling user-defined module - method 2
+
+from Module1 import *
+
+func1()
+func2()
+func3()
+
+# Practice calling user-defined module - method 3
+
+import Module1 as mo # Assign alias 'mo' t
