@@ -1,0 +1,41 @@
+# Dice Game Implementation
+
+# Basic logic design
+# Two players, A and B, roll the dice, and the player with the higher number wins.
+
+# Possible outcomes:
+# A wins
+# B wins
+# A and B tie
+
+# Dice game implementation using the Random function
+
+# Process:
+# 1. Player A rolls the dice
+# 2. Player B rolls the dice
+# 3. Compare the dice rolls of A and B to determine the winner
+# CASES: A wins, B wins, A and B tie
+
+import random
+
+user_a = input("Enter 'A roll' to roll the dice for A: ")
+if user_a == "A roll":
+    dice_a = random.randint(1, 6)
+    # dice_a = random.randrange(1, 7) can also be used
+    print("A's dice result is {}".format(dice_a))
+
+user_b = input("Enter 'B roll' to roll the dice for B: ")
+if user_b == "B roll":
+    dice_b = random.randint(1, 6)
+    print("B's dice result is {}".format(dice_b))
+
+print("*****" * 15)
+print("A's dice result is {}, B's dice result is {}".format(dice_a, dice_b))
+
+# Logic to determine the winner
+if dice_a > dice_b:
+    print("A wins.")
+elif dice_a < dice_b:
+    print("B wins.")
+else:
+    print("It's a tie.")
