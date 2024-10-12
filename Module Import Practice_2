@@ -1,0 +1,18 @@
+# Programming practice using external modules
+
+# Displaying time using the time and datetime modules
+# Calling external modules - treat functions within the module like built-in functions without mentioning the module name
+
+# from module_name import *
+
+from datetime import *
+from time import *
+
+# Calculate and print the difference between two dates
+print(date(2030, 12, 31) - date(2030, 5, 31))
+
+# Print the difference in days between two dates
+print((date(2030, 12, 31) - date(2030, 5, 31)).days) # days delete
+
+# Print the current time
+print("Function to print current time: datetime.now()", datetime.now())
