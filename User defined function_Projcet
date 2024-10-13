@@ -1,0 +1,33 @@
+# Comprehensive project using user-defined functions
+
+# Function to calculate the average score and grade
+
+def grade(*scores):
+    total, avg = 0, 0
+    score_list = []
+
+    for score in scores:
+        total = total + score
+    score_avg = round(total / len(scores), 1)
+
+    if score_avg >= 90:
+        grade = 'A'
+    elif score_avg >= 80:
+        grade = 'B'
+    elif score_avg >= 70:
+        grade = 'C'
+    elif score_avg >= 60:
+        grade = 'D'
+    else:
+        grade = 'F'
+
+    score_list.append(score_avg)
+    score_list.append(grade)
+
+    return score_list
+
+
+# Main code implementation
+
+print(grade(86, 95, 29))
+print(grade(83, 28, 49, 54, 72))
