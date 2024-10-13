@@ -1,0 +1,50 @@
+## Function declaration and practice using a specified number of parameters
+
+# Function declaration
+def add_number(a, b):
+    return a + b
+
+# Function declaration - 2
+def add3_number(a, b, c):
+    return a + b + c
+
+# Main code implementation
+res_1 = add_number(1, 2)
+res_2 = add3_number(1, 2, 3)
+
+print("res_1 : {}".format(res_1))
+print("res_2 : {}".format(res_2))
+
+
+## Setting default values for parameters and passing them
+
+# Creating a function to calculate the sum of 2 numbers and 3 numbers
+
+# Function declaration
+def adder(a, b, c=0):
+    return a + b + c
+
+# Main code
+res_1 = adder(1, 2)
+res_2 = adder(1, 2, 3)
+
+print("res_1 : {}".format(res_1))
+print("res_2 : {}".format(res_2))
+
+
+# Practicing passing parameters without specifying their count
+# Passing parameters as key-value pairs (using a dictionary format)
+
+# Defining a function using variable parameters
+def dict_func(**para):
+    print(para, type(para))
+    for key, value in para.items():
+        print("{} : {}".format(key, value))
+
+# Main code to pass values
+dict_func(student_id=67035, name='Demian', department='Artificial Intelligence')
+
+dict_func(Artificial_Intelligence=1, Data_Analysis=2, Development=3, Planning=4)
+
+# Dictionary data type: An Iterable data type
+# Using a for loop to print keys and values
